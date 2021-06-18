@@ -1,0 +1,27 @@
+img{
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.card{
+  width: 20rem !important;
+}
+
+.parr{
+  height: auto;
+}
+
+@media only screen and (min-width: 480px){
+  img{
+    height: 100% !important;
+    width: 100% !important
+  }
+
+  .card{
+    width: 55rem !important;
+  }
+
+  .parr{
+    height: 50px;
+  }
+}

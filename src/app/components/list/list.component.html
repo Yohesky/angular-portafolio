@@ -1,0 +1,25 @@
+<nav ngbNav #nav="ngbNav" class="nav-tabs mt-5">
+  <ng-container ngbNavItem>
+    <a ngbNavLink>Proyectos</a>
+    <ng-template ngbNavContent>
+      <app-projects type='PROJECTS'></app-projects>
+
+    </ng-template>
+  </ng-container>
+  <ng-container ngbNavItem>
+    <a ngbNavLink>Experiencia</a>
+    <ng-template ngbNavContent>
+      <app-experience type='EXPERIENCE'></app-experience>
+    </ng-template>
+  </ng-container>
+
+  <ng-container ngbNavItem>
+    <a ngbNavLink>Conocimientos</a>
+    <ng-template ngbNavContent>
+      <app-skills type='SKILLS'></app-skills>
+    </ng-template>
+  </ng-container>
+
+</nav>
+
+<div [ngbNavOutlet]="nav" class="mt-4"></div>
