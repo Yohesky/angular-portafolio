@@ -8,6 +8,8 @@ import { ListComponent } from './components/list/list.component';
 import { ProjectsComponent } from './components/list/projects/projects.component';
 import { ExperienceComponent } from './components/list/experience/experience.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { SwiperModule } from "ngx-swiper-wrapper";
+import { CarouselModule as Carousel } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { SkillsComponent } from './components/skills/skills.component';
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    SwiperModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

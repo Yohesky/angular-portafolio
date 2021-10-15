@@ -1,52 +1,39 @@
-<div style="display: flex; flex-direction: column;">
-  <div class="mt-2" style="display: flex; flex-direction: row;">
-    <div class="ml-1">
-      <h4>Wap Us! - Frontend </h4>
-      <p class="p-3 border " style="text-align: justify;">
-        Encargado de solucionar fallos en el
-        sistema además de crear diversas
-        soluciones para los requerimientos
-        bien sea, creando nueva lógica de
-        programación (crear nuevos servicios,
-        crear nuevos componentes, transferir
-        información entre dichos
-        componentes) o estudiar la lógica
-        existente, consumiendo una Rest API
-        para procesar los datos en la vista del
-        cliente y procesar los datos que serán
-        almacenados, usando Angular como
-        Framework Javascript y Angular
-        Material combinado con Bootstrap para
-        el diseño.
-        Utilizando un sistema de control de
-        versiones (Bit Bucket) para el optimo
-        manejo del proyecto con los otros
-        desarrolladores.
-        Empleando apis de terceros tales como
-        Google Maps y Paypal      </p>
+<div>
+  <div class="card">
+    <div class="card-header">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
+        aria-controls="collapseExample">
+        Wap Us!
+      </button>
+      </h5>
     </div>
   </div>
+</div>
+<div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+  <div class="card">
+    <div class="card-body">
+      Encargado de solucionar fallos en el sistema además de crear diversas soluciones para los requerimientos bien sea, creando nueva lógica de programación (crear nuevos servicios, crear nuevos componentes, transferir información entre dichos componentes) o estudiar la lógica existente, consumiendo una Rest API para procesar los datos en la vista del cliente y procesar los datos que serán almacenados, usando Angular como Framework Javascript y Angular Material combinado con Bootstrap para el diseño. Utilizando un sistema de control de versiones (Bit Bucket) para el optimo manejo del proyecto con los otros desarrolladores. Empleando apis de terceros tales como Google Maps y Paypal
+    </div>
+  </div>
+</div>
 
-
-  <div class="mt-4" style="display: flex; flex-direction: row;">
-    <div class="ml-1">
-      <h4>Flexy Store - Frontend</h4>
-      <p class="p-3 border " style="text-align: justify;">
-        Encargado de mantener e implementar
-        nuevas funcionalidades al backoffice
-        para agilizar procesos internos y
-        externos de los clientes, además de
-        comunicar este backoffice con una
-        landing page para ser mas amigable y
-        agilizar la carga de la misma, aplicando lazy load y
-        server side rendering y pre rendering,
-        todo esto tratando y manipulando la
-        información proveniente de una api
-        interna y trabajando con apis externas
-        como open maps para mapas y paypal
-        para procesar pagos, todo esto usando
-        Angular
-      </p>
+<div class="mt-5">
+  <div class="card">
+    <div class="card-header">
+      <h5 class="mb-0">
+        <button type="button" class="btn btn-link" (click)="collapseF.toggle()" [attr.aria-expanded]="!isCollapsedFlexy"
+        aria-controls="collapseExample">
+        Flexy Store
+      </button>
+      </h5>
+    </div>
+  </div>
+</div>
+<div class="mb-5" #collapseF="ngbCollapse" [(ngbCollapse)]="isCollapsedFlexy">
+  <div class="card">
+    <div class="card-body">
+      Encargado de solucionar fallos en el sistema además de crear diversas soluciones para los requerimientos bien sea, creando nueva lógica de programación (crear nuevos servicios, crear nuevos componentes, transferir información entre dichos componentes) o estudiar la lógica existente, consumiendo una Rest API para procesar los datos en la vista del cliente y procesar los datos que serán almacenados, usando Angular como Framework Javascript y Angular Material combinado con Bootstrap para el diseño. Utilizando un sistema de control de versiones (Bit Bucket) para el optimo manejo del proyecto con los otros desarrolladores. Empleando apis de terceros tales como Google Maps y Paypal
     </div>
   </div>
 </div>

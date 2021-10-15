@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent implements OnInit {
-
+  public isCollapsed = false;
+  public isCollapsedFlexy = false
   constructor() { }
 
   ngOnInit(): void {

@@ -1,68 +1,17 @@
-<div class="list mb-5">
-  <img
-    src="https://i.imgur.com/X6mY0tr.png"
-    style="width: 30%; height: 300px"
-    alt=""
-  />
+<div class="gallery-top swiper-container my-5" [swiper]="swiperAutoplayConfig">
 
-  <div class="column1">
-    <ul>
-      <li>
-        <a href="#"> <i class="far fa-check-circle"></i> HTML, CSS</a>
-      </li>
+  <div class="swiper-wrapper">
 
-      <li>
-        <a href="#"> <i class="far fa-check-circle"></i> Flex-Box, Flex-Grid</a>
-      </li>
+    <div *ngFor="let item of list" class="card swiper-slide mx-2 d-flex flex-column">
+      <img [src]="item.image" class="card-img-top" alt="..." style="width: 100% !important; height: 200px;">
+      <div class="card-body">
+        <h5 class="card-title">{{item.name}}</h5>
+      </div>
+    </div>
 
-      <li>
-        <a href="#"> <i class="far fa-check-circle"></i> Bootstrap</a>
-      </li>
-
-      <li>
-        <a href="#"> <i class="far fa-check-circle"></i> Angular Material</a>
-      </li>
-
-      <li>
-        <a href="#"> <i class="far fa-check-circle"></i> Styled Components</a>
-      </li>
-
-      <li>
-        <a href="#">
-          <i class="far fa-check-circle"></i> Certificación de Ingles</a
-        >
-      </li>
-    </ul>
   </div>
-
-  <div class="column1">
-    <ul>
-      <li>
-        <a href="#"> <i class="far fa-check-circle"></i> Angular, React</a>
-      </li>
-
-      <li>
-        <a href="#"> <i class="far fa-check-circle"></i> Javascript, JQuery</a>
-      </li>
-
-      <li></li>
-
-      <li>
-        <a href="#"> <i class="far fa-check-circle"></i> NodeJS, Laravel</a>
-      </li>
-
-      <li>
-        <a href="#">
-          <i class="far fa-check-circle"></i> SQL, MongoDB, Firebase (Básico)</a
-        >
-      </li>
-
-      <li>
-        <a href="#">
-          <i class="far fa-check-circle"></i> Certificación de IT Essentials por
-          CISCO</a
-        >
-      </li>
-    </ul>
-  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
 </div>
